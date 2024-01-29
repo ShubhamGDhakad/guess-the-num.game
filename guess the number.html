@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guess the num game</title>
+</head>
+<body>
+    
+
+    
+</body>
+</html>
+
+<script>
+
+    x = Math.floor(Math.random()*10);
+    alert("please guess the number between 0 to 10")
+    
+    attempt=0;
+    
+    while(true){
+        guess = prompt("Enter a number:");
+        attempt+=1;
+        
+        if(guess==x){
+            alert("Congratulation,you have guessed the right number.");
+            break;
+        }    
+        else if (guess<x){
+            alert("Try a Greater number");
+        }  
+        else{
+            alert("Try a lower number");
+        }
+        
+    }
+
+
+
+</script>
